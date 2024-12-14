@@ -18,6 +18,7 @@ Requires:       cmake
 Requires:       python3-catkin_pkg
 Requires:       ros-jazzy-ament-package
 BuildRequires:  cmake
+BuildRequires:  ros-jazzy-gmock-vendor
 BuildRequires:  python3-catkin_pkg
 BuildRequires:  ros-jazzy-ament-package
 
