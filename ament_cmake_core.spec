@@ -37,6 +37,7 @@ symlink_install: use symlinks for CMake install commands
 # in the install tree and source it.  It will set things like
 # CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
 if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi
+export PYTHONPATH=/usr/lib/python3.11/site-packages:$PYTHONPATH
 mkdir -p .obj-%{_target_platform} && cd .obj-%{_target_platform}
 %cmake3 \
     -UINCLUDE_INSTALL_DIR \
